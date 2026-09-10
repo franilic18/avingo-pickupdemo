@@ -4,11 +4,11 @@ let ul='hr',us='login',retPhotos=[],newDamage=false,fuel='100%',mileage=53250,da
 function draw(){let t=u(),c='';if(us==='login')c=`<section class="u-hero u-login">
   <img class="u-login-logo" src="avingo-icon.png" alt="AVINGO">
   <p class="u-kicker">AVINGO DIGITAL RENTAL</p>
-  <h1>Pronađite svoju rezervaciju</h1>
-  <p>Unesite podatke rezervacije za nastavak.</p>
-  <label class="u-label u-light">Broj rezervacije<input value="#45821" aria-label="Broj rezervacije"></label>
+  <h1>Pronađite svoj najam</h1>
+  <p>Broj ugovora stigao vam je e-mailom. Unesite ga za prikaz vozila.</p>
+  <label class="u-label u-light">Broj ugovora<input value="#45821" aria-label="Broj ugovora"></label>
   <label class="u-label u-light">E-mail<input type="email" value="ivan@email.com" aria-label="E-mail"></label>
-  <p class="u-demo-note">Demo podaci su već uneseni.</p>
+  <p class="u-demo-note">Demo broj ugovora i e-mail već su uneseni.</p>
   ${uxBtn('Prikaži moj najam','home')}
 </section>`;
 if(us==='home')c=`<section class="u-hero"><img src="avingo-icon.png" alt="AVINGO"><h1>${t.start}</h1><p>Ivan Horvat · #45821</p>${car()}<div class="u-live">🟢 ${t.ready}</div>${uxBtn('Započni pre-check-in','personal')}</section>`;if(us==='personal')c=uxTop()+`<section class="u-page"><p class="u-kicker">KORAK 1 OD 6</p><h1>Osobni podaci</h1><p class="u-muted">Provjerite jesu li podaci za najam točni.</p><div class="u-list"><b>Ivan Horvat</b><br>ivan@email.com<br>+385 91 234 5678<br>Ulica grada Vukovara 10, Zagreb</div><div class="u-ready">✓ Podaci spremni za potvrdu</div>${uxBtn('Potvrdi podatke','licence')}</section>`;

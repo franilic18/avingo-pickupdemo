@@ -9,7 +9,7 @@ render=function(){
     if(node.childElementCount===0&&node.textContent.includes('Škoda Octavia 1.5 TSI')) node.textContent=node.textContent.replaceAll('Škoda Octavia 1.5 TSI',VEHICLE.name);
     if(node.childElementCount===0&&node.textContent==='Ivan Horvat · Škoda Octavia') node.textContent='Ivan Horvat · '+VEHICLE.name;
   });
-  document.querySelectorAll('.vehicle img').forEach(image=>{image.src='assets/skoda-octavia-2-0-dsg.png';image.alt=VEHICLE.name});
+  document.querySelectorAll('.vehicle img').forEach(image=>{image.src='skoda-octavia-2-0-dsg.png';image.alt=VEHICLE.name});
   if(screen===2||screen===8) document.querySelectorAll('.vehicle').forEach(card=>card.insertAdjacentHTML('afterend',`<section class="vehicle-specs" aria-label="${labels[0]}"><div><span>${labels[0]}</span><b>Škoda</b></div><div><span>${labels[1]}</span><b>Octavia 2.0 DSG</b></div><div><span>${labels[2]}</span><b>2024</b></div><div><span>${labels[3]}</span><b>DSG automatski</b></div><div><span>${labels[4]}</span><b>Benzin</b></div><div><span>${labels[5]}</span><b>${VEHICLE.plate}</b></div></section>`));
 };
 downloadSummary=function(){
